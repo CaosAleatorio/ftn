@@ -7,6 +7,13 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
+import Results from './pages/Results';
+import Jobs from './pages/Jobs';
+import Reports from './pages/Reports';
+import Volunteers from './pages/Volunteers';
+import Events from './pages/Events';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
 
 function App() {
   useEffect(() => {
@@ -33,6 +40,13 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/results" element={<Results />} />
+            <Route path="/jobs" element={<Jobs />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/volunteers" element={<Volunteers />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
           </Routes>
         </main>
         <Footer />

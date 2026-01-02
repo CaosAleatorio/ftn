@@ -16,7 +16,7 @@ footer {
 
 /* Default solid background for the header */
 nav {
-  @apply fixed top-0 w-full bg-blue-600 text-white shadow-md z-50;
+  @apply fixed top-0 w-full bg-green-600 text-white shadow-md z-50;
   transition: background-color 0.3s, color 0.3s, backdrop-filter 0.3s;
 }
 

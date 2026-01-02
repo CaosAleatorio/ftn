@@ -11,8 +11,8 @@ function Footer() {
           <a href="#" className="hover:underline">LinkedIn</a>
         </div>
         <div className="flex justify-center space-x-4 mt-2">
-          <a href="#" className="hover:underline">Política de Privacidade</a>
-          <a href="#" className="hover:underline">Termos de Uso</a>
+          <a href="/privacy-policy" className="hover:text-blue-500">Política de Privacidade</a>
+          <a href="/terms-of-use" className="hover:text-blue-500">Termos de Uso</a>
           <a href="#" className="hover:underline">Ajuda</a>
         </div>
       </div>

@@ -56,7 +56,7 @@ function Contact() {
               required
             ></textarea>
           </div>
-          <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+          <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Enviar</button>
         </form>
         <div className="mt-8">
           <h2 className="text-xl font-semibold">Informações de Contato</h2>
