@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for responsiveness */
+body {
+  @apply bg-gray-50 text-gray-800;
+}
+
+/* Ensure Navbar and Footer are responsive */
+nav ul {
+  @apply flex flex-col md:flex-row;
+}
+
+footer {
+  @apply text-sm md:text-base;
+}
+
+/* Default solid background for the header */
+nav {
+  @apply fixed top-0 w-full bg-blue-600 text-white shadow-md z-50;
+  transition: background-color 0.3s, color 0.3s, backdrop-filter 0.3s;
+}
+
+/* Transparent background on scroll */
+body.scrolled nav {
+  @apply bg-transparent text-black backdrop-blur;
+}
+
+/* Ensure content starts below the header */
+main {
+  @apply mt-16;
+}
