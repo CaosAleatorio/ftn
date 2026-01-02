@@ -6,7 +6,7 @@ function Home() {
       {/* Hero Section */}
       <section
         className="bg-cover bg-center h-screen text-white flex items-center justify-center"
-        style={{ backgroundImage: "url('/public/img/montanha.jpg')" }}
+        style={{ backgroundImage: "url('/img/montanha.jpg')" }}
       >
         <div className="text-center bg-black bg-opacity-50 p-8 rounded">
           <h1 className="text-5xl font-bold mb-4">Bem-vindo ao Forum Terra Nampula</h1>

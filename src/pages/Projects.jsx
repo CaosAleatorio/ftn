@@ -6,19 +6,19 @@ function Projects() {
       id: 1,
       title: 'Projeto A',
       description: 'Descrição do Projeto A.',
-      image: '/public/img/p1.jpg',
+      image: '/img/p1.jpg',
     },
     {
       id: 2,
       title: 'Projeto B',
       description: 'Descrição do Projeto B.',
-      image: '/public/img/p1.jpg',
+      image: '/img/p1.jpg',
     },
     {
       id: 3,
       title: 'Projeto C',
       description: 'Descrição do Projeto C.',
-      image: '/public/img/p1.jpg',
+      image: '/img/p1.jpg',
     },
   ];
 
