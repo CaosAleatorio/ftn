@@ -55,35 +55,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Important Dates Section */}
-      <section className="bg-gray-100 text-gray-800 p-8 flex justify-center">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Datas Importantes</h2>
-          <ul className="timeline inline-block text-left">
-            <li className="mb-4">
-              <span className="font-bold text-lg">15/11/2025</span>
-              <p>Início de submissão de resumos</p>
-            </li>
-            <li className="mb-4">
-              <span className="font-bold text-lg">31/01/2026</span>
-              <p>Prazo final para a submissão de resumos</p>
-            </li>
-            <li className="mb-4">
-              <span className="font-bold text-lg">28/02/2026</span>
-              <p>Notificação aos autores</p>
-            </li>
-            <li className="mb-4">
-              <span className="font-bold text-lg">30/03/2026 - 30/05/2026</span>
-              <p>Pagamento da inscrição e envio das cartas de aceitação</p>
-            </li>
-            <li className="mb-4">
-              <span className="font-bold text-lg">16 e 17/09/2026</span>
-              <p>Realização do Congresso</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
       {/* Areas of Intervention and Results Section */}
       <section className="bg-gray-100 text-gray-800 p-8">
         <div className="container mx-auto">
@@ -124,6 +95,93 @@ function Home() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Principais Ações Section */}
+      <section className="bg-gray-100 text-gray-800 p-8">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">Principais Ações</h2>
+
+          {/* Posse Segura de Terra */}
+          <div className="flex flex-col md:flex-row items-center mb-8">
+            <img
+              src="/img/posse-segura.JPG"
+              alt="Posse Segura de Terra"
+              className="w-40 h-40 rounded-full shadow-md mb-4 md:mb-0 md:mr-6"
+            />
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold mb-2">I. Posse Segura de Terra</h3>
+              <p className="text-gray-600 mb-4">Delimitação e Demarcação de Terras.</p>
+              <ul className="list-disc pl-5 text-gray-600">
+                <li>Certidões de posse entregues</li>
+                <li>Conflitos de terra mediados</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Lobby & Advocacia */}
+          <div className="flex flex-col md:flex-row items-center mb-8">
+            <img
+              src="/img/lobby-advocacia.jpg"
+              alt="Lobby e Advocacia"
+              className="w-40 h-40 rounded-full shadow-md mb-4 md:mb-0 md:mr-6"
+            />
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold mb-2">II. Lobby & Advocacia</h3>
+              <p className="text-gray-600 mb-4">Mediação e Gestão de Conflitos de Terra.</p>
+              <ul className="list-disc pl-5 text-gray-600">
+                <li>Capacitação e Formação</li>
+                <li>Mitigação dos efeitos das mudanças climáticas</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Empoderamento Econômico */}
+          <div className="flex flex-col md:flex-row items-center">
+            <img
+              src="/img/empoderamento-economico.JPG"
+              alt="Empoderamento Econômico"
+              className="w-40 h-40 rounded-full shadow-md mb-4 md:mb-0 md:mr-6"
+            />
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold mb-2">III. Empoderamento Econômico</h3>
+              <p className="text-gray-600 mb-4">Assessoria Técnica para o Acesso aos Benefícios de Exploração dos Recursos Naturais.</p>
+              <ul className="list-disc pl-5 text-gray-600">
+                <li>Elaboração de Projetos de Geração de Renda</li>
+                <li>Assessoria técnica às comunidades</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Important Dates Section */}
+      <section className="bg-gray-100 text-gray-800 p-8 flex justify-center">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Datas Importantes</h2>
+          <ul className="timeline inline-block text-left">
+            <li className="mb-4">
+              <span className="font-bold text-lg">15/11/2025</span>
+              <p>Início de submissão de resumos</p>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold text-lg">31/01/2026</span>
+              <p>Prazo final para a submissão de resumos</p>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold text-lg">28/02/2026</span>
+              <p>Notificação aos autores</p>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold text-lg">30/03/2026 - 30/05/2026</span>
+              <p>Pagamento da inscrição e envio das cartas de aceitação</p>
+            </li>
+            <li className="mb-4">
+              <span className="font-bold text-lg">16 e 17/09/2026</span>
+              <p>Realização do Congresso</p>
+            </li>
+          </ul>
         </div>
       </section>
     </>

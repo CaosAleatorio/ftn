@@ -60,11 +60,11 @@ function Contact() {
         </form>
         <div className="mt-8">
           <h2 className="text-xl font-semibold">Informações de Contato</h2>
-          <p>Endereço: Rua Exemplo, 123</p>
-          <p>Telefone: (11) 1234-5678</p>
-          <p>Email: contato@organizacao.com</p>
+          <p>Endereço: Subestação Nampula, Moçambique Bairro de Mutauanha</p>
+          <p>Telefone: +258 83 397 4387</p>
+          <p>Email: fterra.secretary@gmail.com</p>
         </div>
-        <p className="text-sm text-gray-600">Exemplo de conteúdo fictício: "Entre em contato conosco para saber mais sobre nossas iniciativas."</p>
+        <p className="text-sm text-gray-600">Entre em contato conosco para saber mais sobre nossas iniciativas.</p>
       </div>
     </section>
   );
