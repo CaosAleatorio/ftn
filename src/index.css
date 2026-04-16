@@ -1,31 +1,150 @@
 @import "tailwindcss";
 
-/* Custom styles for responsiveness */
+/* ===== ROOT & TYPOGRAPHY ===== */
+:root {
+  --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-secondary: #1e293b;
+  --color-light: #f8fafc;
+  --color-text: #1f2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-gray-50 text-gray-800;
+  @apply bg-gray-50 text-gray-800 font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Ensure Navbar and Footer are responsive */
-nav ul {
-  @apply flex flex-col md:flex-row;
+/* ===== HEADER & NAVBAR ===== */
+nav {
+  @apply fixed top-12 lg:top-10 w-full bg-white text-gray-800 z-20 shadow-sm border-b border-gray-100;
+  transition: all 0.3s ease;
 }
 
+body.scrolled nav {
+  @apply shadow-lg;
+}
+
+/* Adjust main content margin for both top bar + navbar */
+main {
+  @apply mt-28 lg:mt-20;
+}
+
+/* ===== FOOTER ===== */
 footer {
   @apply text-sm md:text-base;
 }
 
-/* Default solid background for the header */
-nav {
-  @apply fixed top-0 w-full bg-green-600 text-white shadow-md z-50;
-  transition: background-color 0.3s, color 0.3s, backdrop-filter 0.3s;
+/* ===== TYPOGRAPHY & STYLING ===== */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900 leading-tight;
 }
 
-/* Transparent background on scroll */
-body.scrolled nav {
-  @apply bg-transparent text-black backdrop-blur;
+h1 {
+  @apply text-3xl lg:text-5xl;
 }
 
-/* Ensure content starts below the header */
-main {
-  @apply mt-16;
+h2 {
+  @apply text-2xl lg:text-4xl;
+}
+
+h3 {
+  @apply text-xl lg:text-2xl;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  @apply bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition shadow-md;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-green-600 text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition;
+}
+
+.btn-small {
+  @apply px-4 py-2 rounded-md font-medium transition;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  @apply relative h-screen w-full bg-cover bg-center bg-no-repeat;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-black/40;
+}
+
+.hero-content {
+  @apply relative z-10 h-full flex items-center justify-center;
+}
+
+/* ===== CARD STYLES ===== */
+.card {
+  @apply bg-white rounded-lg shadow-md hover:shadow-lg transition p-6 border border-gray-100;
+}
+
+.card-hover {
+  @apply transform hover:-translate-y-2 transition duration-300;
+}
+
+/* ===== SECTION SPACING ===== */
+.section-padding {
+  @apply py-16 lg:py-24 px-5 lg:px-0;
+}
+
+.container-custom {
+  @apply max-w-6xl mx-auto;
+}
+
+/* ===== LINKS & INTERACTIONS ===== */
+a {
+  @apply transition duration-200;
+}
+
+a:hover {
+  @apply text-green-600;
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+@media (max-width: 768px) {
+  main {
+    @apply mt-40;
+  }
+  
+  h1 {
+    @apply text-2xl;
+  }
+  
+  h2 {
+    @apply text-xl;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ===== GRADIENTS ===== */
+.gradient-primary {
+  @apply bg-gradient-to-r from-green-600 to-green-500;
+}
+
+.gradient-dark {
+  @apply bg-gradient-to-r from-slate-800 to-slate-700;
 }
