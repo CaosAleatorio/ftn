@@ -6,6 +6,7 @@ function PartnersSlider({ partners = [] }) {
   const [needsSlider, setNeedsSlider] = useState(false);
   const containerRef = useRef(null);
   const itemsRef = useRef([]);
+  const itemsPerView = 4;
 
   // Detectar se precisa slider baseado em largura
   useEffect(() => {
@@ -33,11 +34,11 @@ function PartnersSlider({ partners = [] }) {
   }, [partners.length]);
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + partners.length) % Math.max(1, partners.length));
+    setCurrentIndex((prev) => (prev - itemsPerView + partners.length) % Math.max(1, partners.length));
   };
 
   const goToNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % Math.max(1, partners.length));
+    setCurrentIndex((prev) => (prev + itemsPerView) % Math.max(1, partners.length));
   };
 
   if (!partners || partners.length === 0) {
@@ -45,7 +46,7 @@ function PartnersSlider({ partners = [] }) {
   }
 
   // Cálculo do offset para transição suave
-  const offsetX = needsSlider ? -currentIndex * 100 : 0;
+  const offsetX = needsSlider ? -(currentIndex * (100 / itemsPerView)) : 0;
 
   return (
     <section className="w-full bg-white py-12 lg:py-16">
@@ -80,7 +81,7 @@ function PartnersSlider({ partners = [] }) {
                   key={index}
                   ref={(el) => (itemsRef.current[index] = el)}
                   className="flex items-center justify-center h-32 lg:h-40 rounded-lg bg-gray-50 border border-gray-200 hover:shadow-md transition-shadow duration-300 p-6 flex-shrink-0"
-                  style={{ minWidth: needsSlider ? '100%' : '200px', flex: needsSlider ? '0 0 100%' : '1 1 auto', maxWidth: needsSlider ? '100%' : '280px' }}
+                  style={{ minWidth: needsSlider ? `${100 / itemsPerView}%` : '200px', flex: needsSlider ? `0 0 ${100 / itemsPerView}%` : '1 1 auto', maxWidth: needsSlider ? `${100 / itemsPerView}%` : '280px' }}
                 >
                   {partner.logo ? (
                     <img
