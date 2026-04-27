@@ -21,7 +21,7 @@ function Footer() {
                   />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white">Fórum Terra</h3>
+                  <p className="font-bold text-white">Fórum Terra</p>
                   <p className="text-xs text-green-400">Nampula</p>
                 </div>
               </div>

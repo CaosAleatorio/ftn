@@ -65,7 +65,7 @@ function PartnersSlider({ partners = [] }) {
           {/* Container com overflow hidden para slider */}
           <div
             ref={containerRef}
-            className={`overflow-hidden rounded-lg bg-white px-4 py-6 lg:px-8 lg:py-8 ${
+            className={`overflow-hidden rounded-lg bg-white px-10 py-4 sm:px-12 md:px-14 lg:px-8 lg:py-8 ${
               !needsSlider ? 'bg-gray-50' : ''
             }`}
           >
@@ -80,8 +80,8 @@ function PartnersSlider({ partners = [] }) {
                 <div
                   key={index}
                   ref={(el) => (itemsRef.current[index] = el)}
-                  className="flex items-center justify-center h-32 lg:h-40 rounded-lg bg-gray-50 border border-gray-200 hover:shadow-md transition-shadow duration-300 p-6 flex-shrink-0"
-                  style={{ minWidth: needsSlider ? `${100 / itemsPerView}%` : '200px', flex: needsSlider ? `0 0 ${100 / itemsPerView}%` : '1 1 auto', maxWidth: needsSlider ? `${100 / itemsPerView}%` : '280px' }}
+                  className="flex items-center justify-center h-24 sm:h-28 lg:h-40 rounded-lg bg-gray-50 border border-gray-200 hover:shadow-md transition-shadow duration-300 p-3 sm:p-4 lg:p-6 flex-shrink-0"
+                  style={{ minWidth: needsSlider ? '25%' : '25%', flex: needsSlider ? '0 0 25%' : '1 1 25%', maxWidth: needsSlider ? '25%' : '280px' }}
                 >
                   {partner.logo ? (
                     <img
@@ -122,40 +122,22 @@ function PartnersSlider({ partners = [] }) {
             <>
               <button
                 onClick={goToPrevious}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-6 z-10 bg-white hover:bg-gray-100 text-gray-700 hover:text-gray-900 p-2.5 rounded-full border border-gray-300 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="absolute left-2 sm:left-3 top-1/2 transform -translate-y-1/2 z-10 bg-white hover:bg-gray-100 text-gray-700 hover:text-gray-900 p-1.5 sm:p-2 rounded-full border border-gray-300 transition-all duration-300 shadow-md hover:shadow-lg"
                 aria-label="Parceiros anteriores"
                 title="Anterior"
               >
-                <ChevronLeftIcon className="w-5 h-5" />
+                <ChevronLeftIcon className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
 
               <button
                 onClick={goToNext}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6 z-10 bg-white hover:bg-gray-100 text-gray-700 hover:text-gray-900 p-2.5 rounded-full border border-gray-300 transition-all duration-300 shadow-md hover:shadow-lg"
+                className="absolute right-2 sm:right-3 top-1/2 transform -translate-y-1/2 z-10 bg-white hover:bg-gray-100 text-gray-700 hover:text-gray-900 p-1.5 sm:p-2 rounded-full border border-gray-300 transition-all duration-300 shadow-md hover:shadow-lg"
                 aria-label="Próximos parceiros"
                 title="Próximo"
               >
-                <ChevronRightIcon className="w-5 h-5" />
+                <ChevronRightIcon className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </>
-          )}
-
-          {/* Indicadores — Apenas em modo slider */}
-          {needsSlider && (
-            <div className="flex justify-center gap-2 mt-6">
-              {partners.map((_, index) => (
-                <button
-                  key={index}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === currentIndex
-                      ? 'bg-emerald-600 w-6'
-                      : 'bg-gray-300 w-2 hover:bg-gray-400'
-                  }`}
-                  aria-label={`Ir para parceiro ${index + 1}`}
-                  onClick={() => setCurrentIndex(index)}
-                />
-              ))}
-            </div>
           )}
         </div>
       </div>

@@ -7,7 +7,7 @@ function Home() {
   // Slides data for the banner slider
   const bannerSlides = [
     {
-      image: '/img/montanha.JPG',
+      image: '/img/empoderamento-economico.JPG',
       subtitle: 'Uso Sustentável dos Recursos Naturais',
       title: 'Junte-se a nossa Causa',
       description: 'A FTN é uma Organização Nacional da Sociedade Civil, criada em 2003 através da BR.n 13 de 26 de Março IIISérie, reúne membros individuais e coletivos que lidam diretamente com questões relacionadas com Terra, Florestas e Vida Selvagem e Ambiente no que diz respeito ao fortalecimento da capacidade organizacional de grupos e organizações comunitárias de base para a sua participação no empoderamento comunitário à luz das políticas setoriais desenvolvidas no país no contexto do combate e erradicação da pobreza absoluta de acordo com a Agenda 20-30 de Desenvolvimento Sustentável.',
@@ -19,7 +19,7 @@ function Home() {
       }
     },
     {
-      image: '/img/montanha.JPG',
+      image: '/img/posse-segura.JPG',
       subtitle: 'Conservação Ambiental',
       title: 'Protegendo Florestas e Comunidades',
       description: 'Iniciativas dedicadas à proteção e gestão sustentável de recursos naturais, promovendo o bem-estar das comunidades locais e a preservação do ambiente para gerações futuras.',
@@ -31,7 +31,7 @@ function Home() {
       }
     },
     {
-      image: '/img/montanha.JPG',
+      image: '/img/Comites.JPG',
       subtitle: 'Empoderamento Comunitário',
       title: 'Fortalecendo Capacidades Locais',
       description: 'Programas de capacitação e educação voltados para o desenvolvimento organizacional e participação ativa das comunidades em decisões que as afetam.',
@@ -46,7 +46,7 @@ function Home() {
 
   // Partners data
   const partners = [
-    { name: 'Parceiro Institucional 1', logo: '/img/partner-1.png' },
+    { name: 'Parceiro Institucional 1', logo: '/img/Website-Logos-10.png' },
     { name: 'Parceiro Institucional 2', logo: '/img/partner-2.png' },
     { name: 'Parceiro Institucional 3', logo: '/img/partner-3.png' },
     { name: 'Parceiro Institucional 4', logo: '/img/partner-4.png' },
@@ -120,7 +120,7 @@ function Home() {
             </div>
 
             <div className="relative h-96 bg-cover bg-center rounded-lg shadow-lg overflow-hidden">
-              <img src="/img/montanha.JPG" alt="Comunidades locais" className="w-full h-full object-cover" />
+              <img src="/img/tringulo ftn.png" alt="Comunidades locais" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
