@@ -89,7 +89,7 @@ function Navbar() {
               </li>
               <li><Link to="/projects" className="text-gray-700 hover:text-green-600 transition">Projetos</Link></li>
               <li>
-                <button className="text-gray-700 hover:text-green-600 transition">Estrutura</button>
+                <button className="text-gray-700 hover:text-green-600 transition">Equipe</button>
               </li>
               <li>
                 <button className="text-gray-700 hover:text-green-600 transition">Boletim</button>
@@ -139,7 +139,7 @@ function Navbar() {
           <li><Link to="/about" onClick={() => setOpen(false)} className="text-gray-700 hover:text-green-600 block py-2">FT Nampula</Link></li>
           <li><button className="text-gray-700 hover:text-green-600 block py-2 w-full text-left">Programas</button></li>
           <li><Link to="/projects" onClick={() => setOpen(false)} className="text-gray-700 hover:text-green-600 block py-2">Projetos</Link></li>
-          <li><button className="text-gray-700 hover:text-green-600 block py-2 w-full text-left">Estrutura</button></li>
+          <li><button className="text-gray-700 hover:text-green-600 block py-2 w-full text-left">Equipe</button></li>
           <li><button className="text-gray-700 hover:text-green-600 block py-2 w-full text-left">Boletim Informativo</button></li>
           <li><Link to="/contact" onClick={() => setOpen(false)} className="text-gray-700 hover:text-green-600 block py-2">Contactos</Link></li>
 

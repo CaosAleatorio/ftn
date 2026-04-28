@@ -69,10 +69,10 @@ function Home() {
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Nossa Identidade
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4 text-justify">
                 A Fórum Terra Nampula é uma organização de base dedicada ao fortalecimento da capacidade organizacional de grupos e organizações comunitárias na sua participação em empoderamento comunitário.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6 text-justify">
                 Focamos em políticas setoriais desenvolvidas no país no contexto do combate e erradicação da pobreza absoluta de acordo com a Agenda 20-30 de Desenvolvimento Sustentável da ONU.
               </p>
 
@@ -142,7 +142,7 @@ function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Gestão Ambiental</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6 text-justify">
                 Programas focados na conservação de florestas, proteção da biodiversidade e gestão sustentável de recursos naturais.
               </p>
               <Link to="/projects" className="text-green-600 font-semibold hover:text-green-700">
@@ -158,7 +158,7 @@ function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Capacitação Comunitária</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6 text-justify">
                 Formação e empoderamento de comunidades locais para participação ativa em decisões que lhes afetam.
               </p>
               <Link to="/volunteers" className="text-green-600 font-semibold hover:text-green-700">
@@ -174,7 +174,7 @@ function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Advocacia Política</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6 text-justify">
                 Influência em políticas públicas para assegurar desenvolvimento sustentável e proteção ambiental.
               </p>
               <a href="#" className="text-green-600 font-semibold hover:text-green-700">

@@ -56,15 +56,15 @@ function ImageSlider({ slides = [] }) {
               <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
                 <div className="max-w-5xl">
                   {slide.subtitle && (
-                    <p className="text-xs sm:text-sm md:text-base lg:text-xl text-emerald-300 mb-3 sm:mb-4 lg:mb-6 font-light tracking-wider uppercase">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-3xl text-emerald-300 mb-3 sm:mb-4 lg:mb-6 font-bold tracking-wider uppercase">
                       {slide.subtitle}
                     </p>
                   )}
-                  <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 leading-tight drop-shadow-lg">
+                  <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-blue-100 mb-4 sm:mb-6 lg:mb-8 leading-tight drop-shadow-lg">
                     {slide.title}
                   </h2>
                   {slide.description && (
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-100 mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-4xl mx-auto drop-shadow-md font-light">
+                    <p className="text-xs sm:text-sm md:text-base lg:text-xl text-gray-100 mb-6 sm:mb-8 lg:mb-10 leading-relaxed max-w-4xl mx-auto drop-shadow-md font-bold">
                       {slide.description}
                     </p>
                   )}
@@ -109,7 +109,7 @@ function ImageSlider({ slides = [] }) {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 lg:left-8 top-1/2 transform -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full transition duration-300 backdrop-blur-sm"
+        className="absolute left-4 lg:left-8 top-1/2 transform -translate-y-1/2 z-20 bg-transparent hover:bg-white/50 text-white p-3 rounded-full transition duration-300"
         aria-label="Anterior"
         title="Anterior"
       >
@@ -118,7 +118,7 @@ function ImageSlider({ slides = [] }) {
 
       <button
         onClick={goToNext}
-        className="absolute right-4 lg:right-8 top-1/2 transform -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full transition duration-300 backdrop-blur-sm"
+        className="absolute right-4 lg:right-8 top-1/2 transform -translate-y-1/2 z-20 bg-transparent hover:bg-white/50 text-white p-3 rounded-full transition duration-300"
         aria-label="Próximo"
         title="Próximo"
       >
